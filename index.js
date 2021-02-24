@@ -1,6 +1,17 @@
+require("dotenv").config()
 const express = require("express")
 const app = new express()
+const bodyParser = require("body-parser")
+const config = require("./config.js")
 
-app.get("*", (req, res) => res.status(200).send("Site is not yet completed"))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.static("public"))
 
-app.listen(process.env.port).then(console.log(`Site online - ${Date.now()}`))
+app.set("view engine", "ejs")
+
+app.get("/", (req, res) => {
+  res.render("index", {config})
+})
+
+app.listen(process.env.port, () => console.log("Site online"))

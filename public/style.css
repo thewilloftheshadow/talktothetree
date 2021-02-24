@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans';
+}
+.padtop {
+  padding-top: 50px;
+}
+.padbottom {
+  padding-bottom: 20px;
+}
+.bold{
+  font-weight: 900;
+}
+.semibold{
+  font-weight: 600;
+}
+.center {
+  text-align: center;
+}
+.gridblock {
+  display: inline-block;
+}
+#title {
+  padding-bottom: 20px;
+}
+.roundimg {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.right{
+  float: right;
+}
+.vertcenter{
+  vertical-align: middle;
+}
+.hidden{
+  display: none;
+}
+.shown{
+  display: block;
+}
