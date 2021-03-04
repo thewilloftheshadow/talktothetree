@@ -14,4 +14,4 @@ app.get("/", (req, res) => {
   res.render("index", {config})
 })
 
-app.listen(process.env.port, () => console.log("Site online"))
+app.listen(process.env.port, () => console.log("Site online on port " + process.env.port))
