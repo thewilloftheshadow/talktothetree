@@ -1,0 +1,14 @@
+<% podcasts.forEach(x=> { %>
+    <div class="padtop">
+        <div class="card">
+            <h5 class="card-header">
+                <%- x.title %>
+            </h5>
+            <div class="card-body">
+                <p class="card-text">
+                    <%- x.html %>
+                </p>
+            </div>
+        </div>
+    </div>
+    <% }) %>
